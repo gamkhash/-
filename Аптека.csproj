@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34573429-4ECD-4B33-BDAE-7734561F9455}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Аптека</RootNamespace>
+    <AssemblyName>Аптека</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="АптекаDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="АптекаDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АптекаDataSet8.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="АптекаDataSet.xsc">
+      <DependentUpon>АптекаDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet.xss">
+      <DependentUpon>АптекаDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet1.xsc">
+      <DependentUpon>АптекаDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet1.xss">
+      <DependentUpon>АптекаDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet2.xsc">
+      <DependentUpon>АптекаDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet2.xss">
+      <DependentUpon>АптекаDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet3.xsc">
+      <DependentUpon>АптекаDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet3.xss">
+      <DependentUpon>АптекаDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet4.xsc">
+      <DependentUpon>АптекаDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet4.xss">
+      <DependentUpon>АптекаDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet5.xsc">
+      <DependentUpon>АптекаDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet5.xss">
+      <DependentUpon>АптекаDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet6.xsc">
+      <DependentUpon>АптекаDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet6.xss">
+      <DependentUpon>АптекаDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet7.xsc">
+      <DependentUpon>АптекаDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet7.xss">
+      <DependentUpon>АптекаDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet8.xsc">
+      <DependentUpon>АптекаDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="АптекаDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АптекаDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АптекаDataSet8.xss">
+      <DependentUpon>АптекаDataSet8.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
