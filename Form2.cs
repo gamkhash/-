@@ -24,7 +24,7 @@ namespace Аптека
 
         private string connectionString = "Data Source=DESKTOP-JC5A2Q8\\SQLEXPRESS;Initial Catalog= Аптека;Integrated Security=True";
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)//загружаются данные в различные таблицы из базы данных.
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "аптекаDataSet7.Buyers". При необходимости она может быть перемещена или удалена.
             this.buyersTableAdapter2.Fill(this.аптекаDataSet7.Buyers);
@@ -36,7 +36,7 @@ namespace Аптека
             this.madicationTableAdapter2.Fill(this.аптекаDataSet2.Madication);
 
         }
-        private void AddButton_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)//добавляет новую строку в таблицу Madication, после проверки заполнения всех текстовых полей.
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text))
             {
@@ -52,12 +52,12 @@ namespace Аптека
 
                 command = new SqlCommand("INSERT INTO Madication (id_Mtion, Name_of_the_drug,The_amount_of_the_drug, Country_of_the_drug, The_prise_of_the_drug) VALUES (@id_Mtion, @Name_of_the_drug, @The_amount_of_the_drug, @Country_of_the_drug, @The_prise_of_the_drug)", connection);
 
-
+//Изменены названия обектов textBox
                 command.Parameters.AddWithValue("@id_Mtion", lastId + 1);
-                command.Parameters.AddWithValue("@Name_of_the_drug", textBox1.Text);
-                command.Parameters.AddWithValue("@The_amount_of_the_drug", textBox2.Text);
-                command.Parameters.AddWithValue("@Country_of_the_drug", (textBox3.Text));
-                command.Parameters.AddWithValue("@The_prise_of_the_drug", (textBox4.Text));
+                command.Parameters.AddWithValue("@Name_of_the_drug", textBoxNameID.Text);
+                command.Parameters.AddWithValue("@The_amount_of_the_drug", textBoxAmount.Text);
+                command.Parameters.AddWithValue("@Country_of_the_drug", (textBoxCountry.Text));
+                command.Parameters.AddWithValue("@The_prise_of_the_drug", (textBoxPrise.Text));
                 command.ExecuteNonQuery();
                 MessageBox.Show("Новая строка добавлена в базу данных.");
             }
