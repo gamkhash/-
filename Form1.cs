@@ -43,8 +43,8 @@ return count > 0;
 
     private void button1_Click(object sender, EventArgs e)
     {
-        string userName = TextBoxUsername.Text;
-        string userPassword = PasswordTextBox.Text;
+        string userName = TextBoxUsername.Text;//Поле для ввода логина
+        string userPassword = PasswordTextBox.Text;//Поле для ввода пароля
 
         UserManager userManager = new UserManager();
         if (userManager.AuthenticateUser(userName, userPassword))
@@ -56,7 +56,7 @@ return count > 0;
         }
         else
         {
-            MessageBox.Show("Неправильное имя пользователя или пароль!");
+            MessageBox.Show("Неправильное имя пользователя или пароль!");//Строчка которую видит поьзователь при неправиьном вводе данных
         }
     }
 }
